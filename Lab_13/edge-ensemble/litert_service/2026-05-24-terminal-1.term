@@ -1,0 +1,38 @@
+ls
+cd ..
+cd edge-ensemble/
+docker compose up --build
+tree
+ls
+cd litert_service/
+ls
+nano Dockerfile 
+nano requirements.txt 
+cd ..
+clear
+curl -X POST http://localhost:8000/ensemble_predict         -H "Content-Type: application/json"         -D '{"data": [0.5, -0.1, 0.8]}'
+curl -X POST http://localhost:8000/ensemble_predict   \      -H "Content-Type: application/json"         -D '{"data": [0.5, -0.1, 0.8]}'
+curl -X POST http://localhost:8000/ensemble_predict -H "Content-Type: application/json" -d ;{"data": [0.5, -0.1, -.8]}'
+
+
+
+
+
+
+curl -X POST http://localhost:8000/ensemble_predict -H "Content-Type: application/json" -d ;{"data": [0.5, -0.1, -.8]}'
+
+
+
+
+
+
+
+curl -X POST http://localhost:8000/ensemble_predict -H "Content-Type: application/json" -D {"data": [0.5, -0.1, -.8]}'
+
+
+
+
+
+
+
+curl -X POST http://localhost:8000/ensemble_predict      -H "Content-Type: application/json"      -d '{"data": [0.5, -0.1, 0.8]}'
